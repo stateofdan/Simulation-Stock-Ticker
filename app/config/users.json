@@ -1,0 +1,42 @@
+[
+  {
+    "username": "Boss",
+    "role": "admin",
+    "password": "$2b$12$bGhHvZ4e7mr49DTp5u/AB.OHtjLjiMaMAaN34kt7xXT7mbI97v.aC"
+  },
+  {
+    "username": "GroupA",
+    "role": "user",
+    "password": "$2b$12$Uy3XA/1wHNA6VTt3qInpa.22dGzjgCwe2Cfl6jksfNgs13muxoAgy"
+  },
+  {
+    "username": "GroupB",
+    "role": "user",
+    "password": "$2b$12$paKam0SkF6..cpBuVKPshO8chcFyHgBT0k2B3Z.EZMDIb3jbReoaC"
+  },
+  {
+    "username": "GroupC",
+    "role": "user",
+    "password": "$2b$12$hbrrnqYeyBJ61r/m7sAaCO/i0L2sCtlqpwwuaVAh77eUjSX6dpb2m"
+  },
+  {
+    "username": "Instructor1",
+    "role": "instructor",
+    "password": "$2b$12$trR6FTPthdVEvQ7mjne0k.SYifm7lBPdilTqlD6TDiUo0D2Z643RW"
+  },
+  {
+    "username": "Instructor2",
+    "role": "instructor",
+    "password": "$2b$12$HSBeCprQlzBCCACiGZwn2.6SUKR7RR0BM3pNkaIw9t2snfFFI73Va"
+  },
+  {
+    "username": "Instructor3",
+    "role": "instructor",
+    "password": "$2b$12$MuaIOEXS0Qp6APJv/xI32OXm/JGgC6M9429pk.tS0hO3bEhaOwBI."
+  },
+  {
+    "username": "Instructor4",
+    "role": "instructor",
+    "password": "$2b$12$D8K.WTPE831DwwNscXq15./mtjHGiWr7sbNjd.3UQT5UNaJ8xMUxi"
+  }
+]

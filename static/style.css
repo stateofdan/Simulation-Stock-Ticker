@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.company {
+    width: 100%;
+    border-bottom: 1px solid rgb(232,234,237);
+    padding: 0.5rem;
+    color: rgb(32, 33, 36);
+    background-color: #fff;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+/* This holds the Stock price at the top of the page */
+.stock {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #fff;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* This is inside the div.stock and holds the actual price GBX price */
+div.price-block {
+    line-height: 2.75rem;
+    font-size: 2.25rem;
+    font-weight: 500;
+    margin-right: 0.5rem;
+}
+
+/* This div holds all the change information int he div.stock */
+div.change-block {
+    line-height: 2.75rem;
+    display: inline-block;
+}
+
+span.change-pc {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    min-width: 40px;
+    min-height: 1.75rem;
+    margin: 0;
+    margin-right: 0.5rem;
+}
+
+
+span.change-pc.up{
+    color: rgb(19,115,51);
+    background-color: rgb(230,244,234);
+}
+
+span.change-pc.down{
+    color: rgb(165,14,14);
+    background-color: rgb(252,232,230);
+}
+
+span.change-amount {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    padding: 0.5rem;
+    min-height: 1.75rem;
+    margin: 0;
+}
+
+span.change-amount.up {
+    color: rgb(19,115,51);
+}
+
+span.change-amount.down {
+    color: rgb(165,14,14);
+}
+
+svg.up_arrow {
+    fill: green;
+}
+
+svg.down_arrow {
+    fill: red;
+}
+
+
+.data-time {
+    font-size: 0.75rem;
+    color: rgb(95,99,104);
+    margin-top: 0.5rem;
+    line-height: 1rem;
+    font-weight: 400;
+    letter-spacing: .025rem;
+    width: 100%;
+}
+
+.test {
+    width: 100%;
+    background-color: red;
+    margin-top: 0.01rem;
+}
+
+.graph {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #fff;
+    margin-top: 0.01rem;
+}
+
+.graph img {
+    width: 100%;
+}

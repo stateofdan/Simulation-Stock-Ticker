@@ -1,0 +1,11 @@
+{
+  "config_dir": "./app/config/",
+  "roles_file": "./app/config/roles.json",
+  "users_file": "./app/config/users.json",
+  "group_role": "user",
+  "stock_data": {
+    "template": {
+      "symbol": "GOOG"
+    }
+  }
+}
