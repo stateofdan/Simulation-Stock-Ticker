@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Price for Group {{ group_id }}</title>
+    <meta http-equiv="refresh" content="30">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+    <body>
+        <div class="container">
+            <div class="company">
+                {{ data.company_name }} - Group {{ data.group_id}}
+            </div>
+            <div id="stock-data">
+                <div class="stock">
+                    <div class="price-block">
+                        <span>
+                            GBX {{ data.share_price | round(2) }}
+                        </span>
+                    </div>
+                    <div class="change-block">
+                        <span class="change-pc {{ data.change_dir }}">
+                            <span class="arrow">
+                                {% if data.change_dir == 'up' %}
+                                    <svg class= "up_arrow" focusable="false" width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/>
+                                    </svg>
+                                {% else %}
+                                    <svg class= "down_arrow" focusable="false" width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"/>
+                                    </svg>
+                                {% endif %}
+                            </span>
+                            {{ data.change_percent }}%
+                        </span>
+                        <span class="change-amount {{ data.change_dir }}">
+                            
+                            {% if data.change_dir == 'up' %}
+                                +
+                            {% else %}
+                                -
+                            {% endif %}
+                            {{ data.change_val | round(2) }} Today
+                        </span> 
+
+                    </div>
+                    <div class="data-time">
+                        <span>
+                            {{ data.date_time }}                  
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="graph">
+                <img src="data:image/png;base64,{{ data.plot_base64 }}" alt="{{ data.group_id }} Stock Price Plot">
+            </div>
+            <div class="graph">
+                <img src="data:image/png;base64,{{ data.adapt_plot_base64 }}" alt="{{ data.group_id }} Stock Price Plot">
+            </div>
+        </div>
+    </body>
+</html>

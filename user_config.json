@@ -1,0 +1,18 @@
+[
+    {"username": "Boss",
+      "role": "admin"},
+     {"username": "GroupA",
+      "role": "user"},
+     {"username": "GroupB",
+      "role": "user"},
+     {"username": "GroupC",
+      "role": "user"},
+     {"username": "Instructor1",
+      "role": "instructor"},
+     {"username": "Instructor2",
+      "role": "instructor"},
+     {"username": "Instructor3",
+      "role": "instructor"},
+     {"username": "Instructor4",
+      "role": "instructor"}
+]
